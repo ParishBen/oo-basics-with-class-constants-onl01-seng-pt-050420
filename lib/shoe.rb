@@ -4,10 +4,7 @@ class Shoe
 BRANDS = []
   def initialize(brand)
     @brand = brand
-    BRANDS<<@brand
-    holder=[0..BRANDS.length-1]
-    BRANDS.each do |company| if @brand == BRANDS[holder]
-    BRANDS.pop
+    BRANDS<<@brand unless BRANDS.include?(@brand)
    end
   end
  end   
