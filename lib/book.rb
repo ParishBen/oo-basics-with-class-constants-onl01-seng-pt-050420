@@ -7,7 +7,7 @@ class Book
   end
     
     GENRES = []
-    @genre << GENRES
+    GENRES.push(@genre)
   
   
   def turn_page
