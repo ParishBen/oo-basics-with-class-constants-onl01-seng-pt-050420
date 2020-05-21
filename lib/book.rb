@@ -9,7 +9,7 @@ GENRES=[]
   end
    def genre=(genre)
     @genre = genre
-    GENRES << self
+    GENRES << @genre
   end
   
   def turn_page
