@@ -4,10 +4,9 @@ class Shoe
 BRANDS = []
   def initialize(brand)
     @brand = brand
+    BRANDS<<@brand
     BRANDS.each.with_index do |brand, ind| if @brand == brand[ind]
-    BRANDS
-  else
-    BRANDS << @brand 
+    BRANDS.pop
    end
   end
  end   
