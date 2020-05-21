@@ -5,7 +5,8 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS<<@brand
-    BRANDS.each.with_index do |company, ind| if @brand == brand
+    holder=[0..BRANDS.length-1]
+    BRANDS.each do |company| if @brand == brand[holder]
     BRANDS.pop
    end
   end
