@@ -6,7 +6,7 @@ BRANDS = []
     @brand = brand
     BRANDS<<@brand
     holder=[0..BRANDS.length-1]
-    BRANDS.each do |company| if @brand == brand[holder]
+    BRANDS.each do |company| if @brand == BRANDS[holder]
     BRANDS.pop
    end
   end
