@@ -10,7 +10,7 @@ class Book
    
   def genre=(genre)
    @genre=(genre)
-  GENRES << @genre
+  Book.GENRES << self
 end
   def initialize
     @GENRES = []
