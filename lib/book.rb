@@ -5,8 +5,8 @@ class Book
   def initialize(title)
     @title = title
   end
-    @@GENRE = []
-  @genre << @@GENRE
+    GENRE = []
+  @genre << GENRE
   
   def turn_page
     puts "Flipping the page...wow, you read fast!"
