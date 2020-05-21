@@ -11,7 +11,8 @@ class Book
   @GENRES << self
 end
   
-   def @GENRES = []
+   def initialize(@genre)
+     GENRES<<@genre
   end
   def turn_page
     puts "Flipping the page...wow, you read fast!"
