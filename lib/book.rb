@@ -7,8 +7,11 @@ class Book
   end
     
     GENRES = []
-    GENRES.push(@genre)
-  
+   
+   initialize(genre)
+   @genre=(genre)
+  @genre << GENRES
+end
   
   def turn_page
     puts "Flipping the page...wow, you read fast!"
