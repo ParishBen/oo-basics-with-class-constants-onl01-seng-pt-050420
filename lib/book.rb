@@ -6,7 +6,7 @@ class Book
     @title = title
   end
     GENRE = []
-  self.@genre << GENRE
+  self.genre << GENRE
   
   def turn_page
     puts "Flipping the page...wow, you read fast!"
