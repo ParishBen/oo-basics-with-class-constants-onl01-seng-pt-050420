@@ -10,7 +10,7 @@ class Book
    
   def initialize(genre)
    @genre=(genre)
-  @genre << GENRES
+  @genre << GENRES.to_s
 end
   
   def turn_page
