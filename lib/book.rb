@@ -8,11 +8,13 @@ class Book
     
     GENRES = []
    
-  def initialize(genre)
+  def genre=(genre)
    @genre=(genre)
-  @genre << GENRES.to_s
+  GENRES << @genre
 end
-  
+  def initialize
+    @GENRES = []
+  end
   def turn_page
     puts "Flipping the page...wow, you read fast!"
   end
