@@ -7,7 +7,7 @@ class Book
   end
    
 
-  
+  GENRES=[]
    def initialize(genre)
      @genre=genre
      GENRES<<@genre
